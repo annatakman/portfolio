@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 500px;
+  background: url("jude-beck-c18_weJ6n-0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.icons-container {
+ display: flex;
+}
+
+.icon {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  color: #fff;
+  font-family: 'Montserrat';
+}
+
+.profile-picture {
+  background: url("jag.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+}
+
+.portfolio-section {
+  height: 350px;
+  padding: 10px;
+}
+
+.gray {
+  background-color: #F4F4F4;
+}
