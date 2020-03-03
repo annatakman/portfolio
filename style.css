@@ -2,15 +2,18 @@ body {
   margin: 0;
 }
 
+/* HEADER */
+
 header {
-  height: 500px;
+  height: 400px;
   background: url("jude-beck-c18_weJ6n-0-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  padding: 50px 20px;
+  padding: 45px 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .icons-container {
@@ -20,6 +23,7 @@ header {
 .icon {
   border: 3px solid #fff;
   border-radius: 50%;
+  margin: 3px;
   width: 30px;
   height: 30px;
   display: flex;
@@ -30,23 +34,130 @@ header {
 .header-text {
   color: #fff;
   font-family: 'Montserrat';
+  align-self: flex-start;
+}
+
+.header-text p {
+  font-family: 'Roboto';
+}
+
+.name {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 .profile-picture {
-  background: url("jag.jpeg");
-  background-size: cover;
-  background-position: center;
   border: 3px solid #fff;
   border-radius: 50%;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
+  margin-bottom: -60px;
 }
 
+/* INTRODUCTION */
+
+.introduction {
+  font-family: 'Montserrat';
+}
+
+.decoration {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background: #FA382F;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FA382F;
+  margin-left: -5px;
+}
+
+/* TECH SECTION */
+
+.tech {
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PORTFOLIO SECTION */
+
 .portfolio-section {
-  height: 350px;
-  padding: 10px;
+  height: auto;
+  padding: 45px 30px;
+  line-height: 2;
 }
 
 .gray {
   background-color: #F4F4F4;
+}
+
+.section-header {
+  font-family: 'Montserrat';
+  font-size: 22px;
+  background-color: #FA382F;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+
+  .header-text {
+    width: 50%;
+  } 
+
+  .icon {
+    border: 2px solid #fff;
+  }
+
+  .profile-picture {
+    border: 2px solid #fff;
+    align-self: flex-end;
+  } 
+
 }
