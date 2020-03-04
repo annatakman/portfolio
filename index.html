@@ -23,14 +23,15 @@
     </div>
     <div class="header-text">
       <p>PORTFOLIO:<span class="name"> ANNA TAKMAN</span> </p>
-      <h1>Frontend developer with a background in the public sector</h1>
+      <h1 class="header-title-first">Frontend developer</h1>
+      <h2 class="header-title-second">with a background in the public sector</h2>
     </div>
     <img src="jag.jpeg" alt="Picture of Anna Takman" class="profile-picture">
   </header>
 
   <!-- PORTFOLIO INTRODUCTION AND TECH -->
 
-  <section class="portfolio-section gray introduction">
+  <section class="portfolio-section introduction">
     <p>
       <div class="decoration">
         <div class="line"></div>
@@ -49,9 +50,10 @@
 
   <!-- FEATURED PROJECTS SECTION -->
 
-  <section class="portfolio-section gray featured-projects">
+  <section class="portfolio-section featured-projects">
     <h2 class="section-header">FEATURED PROJECTS</h2>
     <section class="projects-container">
+
       <a href="" class="project-card">
         <div class="image-container">
           <picture>
@@ -182,20 +184,8 @@
   <section class="portfolio-section my-thoughts">
     <h2 class="section-header">MY THOUGHTS</h2>
 
-    <article class="featured-thoughts">
-    <a class="thoughts-card" href="">
-      <picture>
-        <source media="(max-width: 1023px)" srcset="small-thoughts-image.png">
-        <source media="(min-width: 1040px)" srcset="big-thoughts-image.png">
-        <img src="big-thoughts-image.png" alt="image representing article at Linkedin">
-      </picture>
-      <p class="date">FEB 2020</p>
-      <h4>Things about coding</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. <span class="arrows">>></span></p>
-    </a>
-
-    <a class="thoughts-card" href="">
+    <section class="featured-thoughts">
+      <a class="thoughts-card" href="">
         <picture>
           <source media="(max-width: 1023px)" srcset="small-thoughts-image.png">
           <source media="(min-width: 1040px)" srcset="big-thoughts-image.png">
@@ -206,7 +196,19 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. <span class="arrows">>></span></p>
       </a>
-    </article>
+
+      <a class="thoughts-card" href="">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="small-thoughts-image.png">
+          <source media="(min-width: 1040px)" srcset="big-thoughts-image.png">
+          <img src="big-thoughts-image.png" alt="image representing article at Linkedin">
+        </picture>
+        <p class="date">FEB 2020</p>
+        <h4>Things about coding</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. <span class="arrows">>></span></p>
+      </a>
+    </section>
 
     <h2 class="sub-section-header">MORE THOUGHTS</h2>
     <a class="thoughts-card" href="">
@@ -230,7 +232,7 @@
 
   <!-- SKILLS SECTION -->
 
-  <section class="portfolio-section gray skills">
+  <section class="portfolio-section skills">
     <h2 class="section-header">SKILLS</h2>
     <section class="skills-container">
       <div class="skill-card">

@@ -2,6 +2,25 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10%;
+  height: auto;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.portfolio-section:nth-child(even) {
+  background-color: #F4F4F4;
+}
+
 /* HEADER */
 
 header {
@@ -9,7 +28,7 @@ header {
   background: url("mockaroon-9f3tCfHoGDE-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  padding: 45px 30px;
+  padding: 45px 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -39,31 +58,39 @@ header {
 
 .header-text p {
   font-family: 'Roboto';
+  font-size: 16px;
 }
 
 .name {
   font-weight: bold;
 }
 
-h1 {
+.header-title-first {
   font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.header-title-second {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 8px 0 0 0;
 }
 
 .profile-picture {
   border: 3px solid #fff;
   border-radius: 50%;
+  z-index: 1;
   width: 180px;
   height: 180px;
   margin-bottom: -60px;
 }
 
-/* PORTFOLIO INTRODUCTION */
+/* PORTFOLIO INTRODUCTION AND TECH SECTION */
 
-.introduction {
+.portfolio-section.introduction {
   font-family: 'Montserrat';
-  /* Här vill jag få textdekorationen att ligga på samma rad som paragrafen. 
-  Nu beter den sig som display: flex. */
-  display: inline block;
+  display: inline-block;
 }
 
 .decoration {
@@ -90,31 +117,9 @@ h1 {
 
 .tech {
   font-family: 'Montserrat';
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* PORTFOLIO SECTION */
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.portfolio-section {
-  height: auto;
-  padding: 10px 24px;
-  line-height: 2;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gray {
-  background-color: #F4F4F4;
-}
+/* FEATURED PROJECTS AND OTHER PROJECTS SECTION */
 
 .section-header {
   font-family: 'Montserrat';
@@ -138,21 +143,20 @@ a {
 
 .project-card img {
   width: 100%;
-  opacity: 0.7;
 }
-
-/* How to make the heading to get opacity 1? */
 
 h3 {
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: bold;
+  background: rgba(0,0,0,0.4);
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0 20%;
 }
 
 .project-card-text {
@@ -202,19 +206,15 @@ h3 {
 
 /* MY THOUGHTS SECTION  */
 
-/* Hur visar man bäst fler eller färre "thoughts" med bilder beroende på screen size? */
-
-.featured-thoughts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .my-thoughts {
   font-family: 'Roboto';
 }
 
-.my-thoughts img {
+.thoughts-card {
+  margin: 6px;
+}
+
+.thoughts-card img {
   width: 100%;
 }
 
@@ -236,11 +236,6 @@ h4 {
 font-weight: bold;
 font-size: 21px;
 margin: 0;
-}
-
-.thoughts-card {
-  margin: 6px 0;
-  padding: 0 20px;
 }
 
 /* SKILLS SECTION */
@@ -317,15 +312,21 @@ h6 {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 668px) {
+  .portfolio-section {
+    padding: 45px 20%;
+  }
+}
+
 @media (min-width: 1024px) {
 
   header {
-    padding: 45px 180px;
+    padding: 45px 20%;
   }
 
-  .header-text {
-    width: 50%;
-  } 
+  .header-title-second {
+    font-size: 28px;
+  }
 
   .icon {
     border: 2px solid #fff;
@@ -334,13 +335,7 @@ h6 {
   .profile-picture {
     border: 2px solid #fff;
     align-self: flex-end;
-    width: 200px;
-    height: 200px;
   } 
-
-  .portfolio-section {
-    padding: 45px 180px;
-  }
 
   .other-projects {
     padding: 0;
