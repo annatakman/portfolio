@@ -5,8 +5,8 @@ body {
 /* HEADER */
 
 header {
-  height: 400px;
-  background: url("jude-beck-c18_weJ6n-0-unsplash.jpg");
+  height: 380px;
+  background: url("mockaroon-9f3tCfHoGDE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   padding: 45px 30px;
@@ -57,7 +57,7 @@ h1 {
   margin-bottom: -60px;
 }
 
-/* INTRODUCTION */
+/* PORTFOLIO INTRODUCTION */
 
 .introduction {
   font-family: 'Montserrat';
@@ -87,8 +87,6 @@ h1 {
   background: #FA382F;
   margin-left: -5px;
 }
-
-/* TECH SECTION */
 
 .tech {
   font-family: 'Montserrat';
@@ -128,11 +126,22 @@ a {
   padding: 0 6px;
 }
 
+.project-card {
+  margin: 6px;
+}
+
 .image-container {
   position: relative;
   text-align: center;
   color: #fff;
 }
+
+.project-card img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+/* How to make the heading to get opacity 1? */
 
 h3 {
   font-family: 'Montserrat';
@@ -140,6 +149,7 @@ h3 {
   font-weight: bold;
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +192,7 @@ h3 {
   padding: 10px 0;
 }
 
-.sub-section {
+.sub-section-header {
   font-family: 'Montserrat';
   font-weight: bold;
   font-size: 21px;
@@ -191,6 +201,14 @@ h3 {
 }
 
 /* MY THOUGHTS SECTION  */
+
+/* Hur visar man bäst fler eller färre "thoughts" med bilder beroende på screen size? */
+
+.featured-thoughts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .my-thoughts {
   font-family: 'Roboto';
@@ -210,7 +228,7 @@ h3 {
   font-weight: normal;
 }
 
-.more-thoughts {
+.thoughts-content {
   font-weight: bold;
 }
 
@@ -343,15 +361,16 @@ h6 {
     margin: 14px;
     padding: 6px 14px;
   }
-
-  .project-card img {
-    width: 100%;
-  }
   
   .skill-card {
     width: 15%;
     flex-grow: 1;
     margin: 18px;
+  }
+
+  .featured-thoughts {
+    display: flex;
+    flex-direction: row;
   }
 
 }
