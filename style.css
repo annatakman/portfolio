@@ -24,8 +24,8 @@ a {
 /* HEADER */
 
 header {
-  height: 380px;
-  background: url("mockaroon-9f3tCfHoGDE-unsplash.jpg");
+  height: 480px;
+  background: url("Images/palmtrees.jpg");
   background-size: cover;
   background-position: center;
   padding: 45px 10%;
@@ -142,6 +142,7 @@ header {
 }
 
 .project-card img {
+  display: block;
   width: 100%;
 }
 
@@ -212,10 +213,16 @@ h3 {
 
 .thoughts-card {
   margin: 6px;
+  width: 50%;
+}
+
+.small-thoughts {
+  margin: 6px;
 }
 
 .thoughts-card img {
   width: 100%;
+  display: block;
 }
 
 .my-thoughts p {
@@ -245,6 +252,7 @@ margin: 0;
 }
 
 .skills-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -295,7 +303,7 @@ margin: 0;
 /* FOOTER */
 
 footer {
-  background-color: #072BCE;
+  background-color: #f8d6d9;
   color: #fff; 
   font-family: 'Roboto';
   font-size: 17px;
@@ -356,9 +364,18 @@ h6 {
     margin: 14px;
     padding: 6px 14px;
   }
+
+  .skills {
+    padding: 0;
+  }
+
+  .skills-container {
+    flex-wrap: no-wrap;
+    padding: 20px;
+  }
   
   .skill-card {
-    width: 15%;
+    width: 20%;
     flex-grow: 1;
     margin: 18px;
   }
