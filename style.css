@@ -181,6 +181,7 @@ h3 {
 
 .project-card-tags {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -190,7 +191,7 @@ h3 {
   color: #2B2E34;
   text-align: center;
   font-weight: bold;
-  margin: 0 5px;
+  margin: 0 5px 5px 5px;
 }
 
 .other-project-card {
