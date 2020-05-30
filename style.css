@@ -197,7 +197,9 @@ h3 {
 .other-project-card {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  align-items: flex-start;
+  padding: 10px;
+  width: 90%;
 }
 
 .sub-section-header {
